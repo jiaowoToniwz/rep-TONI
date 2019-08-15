@@ -1,0 +1,17 @@
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\biz\TagsBiz.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\biz\MyBatisHelper.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\dao\TfMapper.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\bean\TfExample.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\dao\FavoriteMapper.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\biz\BizException.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\bean\FavoriteExample.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\biz\AnnoTest.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\controller\IndexAction.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\biz\FavoriteBiz.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\bean\Tags.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\bean\TagsExample.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\controller\AddAction.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\bean\Tf.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\dao\TagsMapper.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\bean\Favorite.java
+D:\sanqi\demo-favorite\src\main\java\com\yc\favorite\biz\SpringHelper.java
