@@ -38,4 +38,12 @@ public class ArticleBiz{
 		am.updateByPrimaryKey(a);
 		return a;
 	}
+	
+	public List<Article>queryRela(Integer categotyid){
+		ArticleExample example = new ArticleExample();
+		example.setOrderByClause("createTime desc");
+		example.createCriteria().andCategoryidEqualTo(categotyid);
+		PageHelper.startPage(1, 10);
+		return am.selectByExample(example);
+	}
 }

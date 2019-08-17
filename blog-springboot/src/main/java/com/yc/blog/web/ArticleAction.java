@@ -42,7 +42,8 @@ public class ArticleAction {
 	@GetMapping("article")
 	public String article(int id, Model model) {
 		Article a = abiz.read(id);
-		
+		List<Article> relaList = abiz.queryRela(a.getCategoryid());
+		model.addAttribute("relaList", relaList);
 		model.addAttribute(a);
 		return "article";
 	}

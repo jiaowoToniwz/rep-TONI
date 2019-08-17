@@ -57,14 +57,9 @@
           <h3>相关推荐</h3>
         </div>
         <ul>
-          <li><a href="article.html">php如何判断一个日期的格式是否正确</a></li>
-          <li><a href="article.html">php如何判断一个日期的格式是否正确</a></li>
-          <li><a href="article.html">php如何判断一个日期的格式是否正确</a></li>
-          <li><a href="article.html">php如何判断一个日期的格式是否正确</a></li>
-          <li><a href="article.html">php如何判断一个日期的格式是否正确</a></li>
-          <li><a href="article.html">php如何判断一个日期的格式是否正确</a></li>
-          <li><a href="article.html">php如何判断一个日期的格式是否正确</a></li>
-          <li><a href="article.html">php如何判断一个日期的格式是否正确</a></li>
+       		<c:forEach items="${relaList }" var = "a">
+          <li><a href="article?id=${a.id }">${a.title }</a></li>
+        	</c:forEach>
         </ul>
       </div>
       <div class="title" id="comment">
