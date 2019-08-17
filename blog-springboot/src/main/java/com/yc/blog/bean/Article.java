@@ -1,10 +1,13 @@
 package com.yc.blog.bean;
 
 import java.util.Date;
+import java.util.List;
 
 public class Article {
 	
 	private Category category;
+	
+	private List<Comment> comments;
 	
     /**
      *
@@ -474,5 +477,13 @@ public class Article {
 
 	public void setCategory(Category category) {
 		this.category = category;
+	}
+
+	public List<Comment> getComments() {
+		return comments;
+	}
+
+	public void setComments(List<Comment> comments) {
+		this.comments = comments;
 	}
 }

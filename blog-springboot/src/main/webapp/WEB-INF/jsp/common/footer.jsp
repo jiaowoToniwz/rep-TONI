@@ -47,7 +47,7 @@
         <div class="modal-body">
           <div class="form-group">
             <label for="loginModalUserNmae">用户名</label>
-            <input type="text" class="form-control" id="loginModalUserNmae" placeholder="请输入用户名" autofocus maxlength="15" autocomplete="off" required>
+            <input type="text" class="form-control" id="loginModalUserName" placeholder="请输入用户名" autofocus maxlength="15" autocomplete="off" required>
           </div>
           <div class="form-group">
             <label for="loginModalUserPwd">密码</label>
@@ -64,15 +64,16 @@
 </div>
 <script type="text/javascript">
 function login(){
+
 	var url = "login";
-	var name = loginModalUserName.value;
+	var name = loginModalUserName.value; 
 	var pwd = loginModalUserPwd.value;
 	var param = {name:name,password:pwd};
 	var callback = function(result){
 		if(result.code==1){
 			$(".login").text("欢迎："+result.data.cnName);
 			$(".login").attr("data-target","");
-			$("loginModal").modal('hide');
+			$("#loginModal").modal('hide');
 		}else{
 			alert(result.msg);
 		}
