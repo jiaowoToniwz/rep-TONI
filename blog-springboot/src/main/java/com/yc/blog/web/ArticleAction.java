@@ -16,7 +16,7 @@ import com.yc.blog.biz.ArticleBiz;
 import com.yc.blog.biz.CategoryBiz;
 
 @Controller
-public class ArticleAction {
+public class ArticleAction { 
 	@Resource
 	private ArticleBiz abiz;
 	@Resource
@@ -46,5 +46,10 @@ public class ArticleAction {
 		model.addAttribute("relaList", relaList);
 		model.addAttribute(a);
 		return "article";
+	}
+	
+	@GetMapping("toedit")
+	public String toedit() {
+		return "articleEdit";
 	}
 }

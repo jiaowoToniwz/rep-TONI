@@ -100,11 +100,11 @@ $("#gotop").click(function () {
  
 //图片延时加载
 $("img.thumb").lazyload({
-    placeholder: "/Home/images/occupying.png",
+    placeholder: "/images/occupying.png",
     effect: "fadeIn"
 });
 $(".single .content img").lazyload({
-    placeholder: "/Home/images/occupying.png",
+    placeholder: "/images/occupying.png",
     effect: "fadeIn"
 });
  
@@ -118,24 +118,31 @@ $('[data-toggle="tooltip"]').tooltip();
  
  
 //无限滚动反翻页
-jQuery.ias({
+var ias = jQuery.ias({
 	history: false,
 	container : '.content',
 	item: '.excerpt',
 	pagination: '.pagination',
 	next: '.next-page a',
 	trigger: '查看更多',
-	loader: '<div class="pagination-loading"><img src="/Home/images/loading.gif" /></div>',
-	triggerPageThreshold: 5,
-	onRenderComplete: function() {
+	loader: '<div class="pagination-loading"><img src="/images/loading.gif" /></div>',
+	triggerPageThreshold: 5
+});
+
+var page = 1;
+ias.on('load',function(event){
+	event.ajaxOptions.data = { page: ++page};
+});
+
+/*	onRenderComplete: function() {
 		$('.excerpt .thumb').lazyload({
-			placeholder: '/Home/images/occupying.png',
+			placeholder: '/images/occupying.png',
 			threshold: 400
 		});
 		$('.excerpt img').attr('draggable','false');
 		$('.excerpt a').attr('draggable','false');
 	}
-});
+});*/
  
 //鼠标滚动超出侧边栏高度绝对定位
 $(window).scroll(function () {
@@ -276,7 +283,7 @@ $(function(){
 function replace_em(str){
 	str = str.replace(/\</g,'&lt;');
 	str = str.replace(/\>/g,'&gt;');
-	str = str.replace(/\[em_([0-9]*)\]/g,'<img src="/Home/images/arclist/$1.gif" border="0" />');
+	str = str.replace(/\[em_([0-9]*)\]/g,'<img src="/images/arclist/$1.gif" border="0" />');
 	return str;
 }
 
