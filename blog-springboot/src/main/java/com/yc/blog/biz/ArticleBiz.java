@@ -46,4 +46,9 @@ public class ArticleBiz{
 		PageHelper.startPage(1, 10);
 		return am.selectByExample(example);
 	}
+
+	public void save(Article article) {
+		am.insert(article);
+		
+	}
 }

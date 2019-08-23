@@ -10,6 +10,15 @@ spring:
     username: root
     password: aaaa
     driver-class-name: com.mysql.jdbc.Driver
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+      
+  resources:
+    staticLocations:
+      file:/d:/blog/
     
   mail:
     host: smtp.qq.com
@@ -19,6 +28,8 @@ spring:
 
 server:
   port: 80
+  tomcat:
+    uri-encoding: UTF-8
 
 mail:
   fromMail:

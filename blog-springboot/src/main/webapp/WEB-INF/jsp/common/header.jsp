@@ -20,14 +20,17 @@
         <a data-toggle="modal" data-target="${loginedUser == null ? '#loginModal' : '' }" class="login" rel="nofollow">
         ${loginedUser == null ? 'Hi,请登录' : '欢迎'.concat(loginedUser.cnName) }
         </a>&nbsp;&nbsp;
-        <a href="javascript:;" class="register" rel="nofollow">我要注册</a>&nbsp;&nbsp;<a href="" rel="nofollow">找回密码</a> </div>
+        <a href="javascript:;" class="register" rel="nofollow">我要注册</a>&nbsp;&nbsp;
+        <a href="" rel="nofollow">找回密码</a> &nbsp;&nbsp;
+        <a href="toedit" rel="nofollow">发表博文</a>
+        </div>
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar" aria-expanded="false"> <span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <h1 class="logo hvr-bounce-in"><a href="" title=""><img src="images/logo.png" alt=""></a></h1>
       </div>
       <div class="collapse navbar-collapse" id="header-navbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class="hidden-index active"><a data-cont="异清轩首页" href="index.html">异清轩首页</a></li>
+          <li class="hidden-index active"><a data-cont="异清轩首页" href="index">异清轩首页</a></li>
           <c:forEach items="${cList }" var="c">
           <li><a href="category?id=${c.id }&name=${c.name}">${c.name }</a></li>
           </c:forEach>

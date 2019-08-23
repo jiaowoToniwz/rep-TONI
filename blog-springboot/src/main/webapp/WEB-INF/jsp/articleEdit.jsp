@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,14 +38,19 @@
 <section class="container">
   <div class="content-wrap">
     <div class="content">
-		<form action="">
-			<textarea rows="" cols="">
-			
-			</textarea>
+    	<h3>博文编辑</h3>
+		<form:form action="saveArticle" modelAttribute="article">
+			标题:<form:input path="title"/><br>
+			分类:<form:select path="categoryid"
+					items="${cList }" itemLabel="name"
+					itemValue="id"/>
+			标签:<form:input path="label"/>
+			<form:textarea path="content"/>
 			<script>
-				CKEDITOR.replace('editor1')
+				CKEDITOR.replace('content');
 			</script>
-		</form>
+			<input type="submit" value="保存">
+		</form:form>
     </div>
   </div>
   <aside class="sidebar">
