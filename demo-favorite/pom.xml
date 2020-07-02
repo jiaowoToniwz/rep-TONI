@@ -52,7 +52,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		<dependency>
 	    <groupId>mysql</groupId>
 	    <artifactId>mysql-connector-java</artifactId>
-	    <version>5.1.47</version>
+	    <version>8.0.16</version>
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/junit/junit -->
 	<dependency>
@@ -124,7 +124,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 					<dependency>
 				    <groupId>mysql</groupId>
 				    <artifactId>mysql-connector-java</artifactId>
-				    <version>5.1.47</version>
+				    <version>8.0.16</version>
 				</dependency>
 	          </dependencies>
 	        </plugin>
