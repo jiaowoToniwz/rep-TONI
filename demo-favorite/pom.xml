@@ -12,7 +12,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
-		<spring-version>4.3.17.RELEASE</spring-version>
+		<spring-version>6.0.0</spring-version>
 	</properties>
   <packaging>war</packaging>
   <dependencies>
